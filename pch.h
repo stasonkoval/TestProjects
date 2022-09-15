@@ -23,6 +23,7 @@
 #include <shared_mutex>
 #include <condition_variable>
 #include <any>
+#include <filesystem>
 
 #ifndef IN
 #define IN

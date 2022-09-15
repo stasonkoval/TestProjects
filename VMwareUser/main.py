@@ -23,9 +23,12 @@ class VMwareUser:
                 "Koval_Windows_10_21H1"
             ],
             "Clear Linux": [
-                "Koval_AltLinux_100",
+                "Koval_AltLinux_10.0",
                 "Koval_AltLinux_8.2",
                 "Koval_AltLinux_9.8",
+                "Koval_AltLinuxK_10.0",
+                "Koval_AltServer_10.0",
+                "Koval_AltServer_9.2",
                 "Koval_Astra_Orel_2.12",
                 "Koval_Astra_Smolensk_1.7",
                 "Koval_CentOS_7.9",
