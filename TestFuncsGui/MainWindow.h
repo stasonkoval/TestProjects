@@ -4,10 +4,8 @@
 
 #include "ui_MainWindow.h"
 
-#include <pch.h>
-
-#include "ucc/core/ucTypes.h"
-#include "ucc/core/ucMisc.h"
+#include "pch.h"
+#include "ucPch.h"
 
 class MainWindow : public QMainWindow
 {
