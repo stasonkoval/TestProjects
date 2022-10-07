@@ -81,7 +81,7 @@ class VMwareUser:
                 print(e)
                 print("Введите корректный номер списка:")
                 continue
-        if not cmd:
+        if cmd == None:
             raise Exception("Список машин для обработки не выбран")
 
         for name, machine_names in self.available_apply_machines.items():
