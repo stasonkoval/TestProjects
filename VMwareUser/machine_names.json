@@ -1,14 +1,14 @@
 {
     "Clear Windows": [
-        "Koval_Windows_10_1909",
-        "Koval_Windows_10_20H2",
-        "Koval_Windows_10_21H1"
+        "Koval_Windows_18363(1909)",
+        "Koval_Windows_19042(20H2)",
+        "Koval_Windows_19043(21H1)"
     ],
     "Clear Linux": [
         "Koval_AltLinux_10.0",
         "Koval_AltLinux_8.2",
         "Koval_AltLinux_9.8",
-        "Koval_AltLinuxK_10.0",
+        "Koval_AltLinux_K_10.0",
         "Koval_AltServer_10.0",
         "Koval_AltServer_9.2",
         "Koval_Astra_Orel_2.12",
@@ -23,6 +23,7 @@
         "Koval_OpenSUSE_15.3",
         "Koval_RedOS_7.3.1",
         "Koval_Ubuntu_18.04",
-        "Koval_Ubuntu_20.04"
+        "Koval_Ubuntu_20.04",
+        "Koval_Ubuntu_22.04"
     ]
 }
