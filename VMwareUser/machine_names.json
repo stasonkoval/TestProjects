@@ -4,8 +4,8 @@
         "Koval_Win10_20H2(19042)",
         "Koval_Win10_21H1(19043)",
         "Koval_Win11_22H2(22621)",
-        "Koval_Win7(Service_Pack_1)",
-        "Koval_Win81(2707370)",
+        "Koval_Win7(7601)",
+        "Koval_Win81(9600)",
         "Koval_Win_Ser_2019_1809(17763)"
     ],
     "Clear Linux": [
@@ -14,7 +14,9 @@
         "Koval_AltLinux_9.8",
         "Koval_AltLinux_K_10.0",
         "Koval_AltServer_10.0",
+        "Koval_AltServer_9.2",
         "Koval_Astra_Orel_2.12",
+        "Koval_Astra_Smolensk_1.6",
         "Koval_Astra_Smolensk_1.7",
         "Koval_CentOS_7.9",
         "Koval_CentOS_8.4.2105",
