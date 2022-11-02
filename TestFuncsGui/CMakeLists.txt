@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.18)
 
-project(TestFuncs LANGUAGES CXX C)
+project(TestFuncsGui LANGUAGES CXX C)
 
 set(CONAN_FILE_PATH ${CMAKE_CURRENT_LIST_DIR}/.)
 include($ENV{UCC_DIR}/../uccutils/cmake/common.cmake)
@@ -17,9 +17,9 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-common_executable(TestFuncs)
+common_executable(TestFuncsGui)
 
-target_compile_definitions(TestFuncs PRIVATE
+target_compile_definitions(TestFuncsGui PRIVATE
     QT_DEPRECATED_WARNINGS
     DISABLE_VISUALIZER_EDITOR
 )
@@ -31,7 +31,7 @@ find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
 find_package(nlohmann_json REQUIRED)
 find_package(utf8cpp REQUIRED)
 find_package(uccBase REQUIRED)
-target_link_libraries(TestFuncs
+target_link_libraries(TestFuncsGui
     Qt5::Core
     Qt5::Gui
     Qt5::Widgets
@@ -41,23 +41,23 @@ target_link_libraries(TestFuncs
     uccBase::uccBase
 )
 if(UNIX)
-    target_link_libraries(TestFuncs
+    target_link_libraries(TestFuncsGui
         -lresolv
     )
 endif()
 
 # ==================================
-#  Подключение исходников TestFuncs
+#  Подключение исходников TestFuncsGui
 # ==================================
 set(UI_FILES
     MainWindow.ui
 )
 
-target_include_directories(TestFuncs PUBLIC
+target_include_directories(TestFuncsGui PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/../TestFuncsCommon
 )
 
-target_sources(TestFuncs PUBLIC
+target_sources(TestFuncsGui PUBLIC
     #Headers
     ${CMAKE_CURRENT_SOURCE_DIR}/../TestFuncsCommon/pch.h
     ${CMAKE_CURRENT_SOURCE_DIR}/../TestFuncsCommon/ucPch.h
@@ -71,7 +71,7 @@ target_sources(TestFuncs PUBLIC
     ${UI_FILES}
 )
 
-set_ui_search_paths_for_target(TestFuncs UI_FILES ${UI_FILES})
+set_ui_search_paths_for_target(TestFuncsGui UI_FILES ${UI_FILES})
 
 source_group("Forms"
     FILES ${UI_FILES}
