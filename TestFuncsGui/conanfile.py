@@ -9,4 +9,4 @@ class TestFuncsGuiConan(ConanFile):
         "utfcpp/3.2.1",
         "uccBase/[^0.4.52]"
     )
-    generators = "qmake"
+    generators = "cmake", "cmake_find_package"
