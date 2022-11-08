@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "../TestFuncsCommon/pch.h"
 
 #include "ucc/core/ucMisc.h"
 #include "ucc/core/ucTypes.h"
