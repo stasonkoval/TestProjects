@@ -20,7 +20,9 @@
 #include <shared_mutex>
 #include <sstream>
 #include <string>
+#include <string_view>
 #include <thread>
+#include <type_traits>
 #include <typeindex>
 #include <unordered_map>
 #include <unordered_set>
