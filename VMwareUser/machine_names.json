@@ -1,36 +1,126 @@
 {
     "Clear Windows": [
-        "Koval_Win10_1909(18363)",
-        "Koval_Win10_20H2(19042)",
-        "Koval_Win10_21H1(19043)",
-        "Koval_Win11_22H2(22621)",
-        "Koval_Win7(7601)",
-        "Koval_Win81(9600)",
-        "Koval_Win_Ser_2019_1809(17763)"
+        {
+            "vm_name": "Koval_Win10_1909(18363)",
+            "hostname": "kwin101909.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win10_20H2(19042)",
+            "hostname": "kwin1020h2.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win10_21H1(19043)",
+            "hostname": "kwin1021h1.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win11_22H2(22621)",
+            "hostname": "kwin1122h2.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win7(7601)",
+            "hostname": "kwin7.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win81(9600)",
+            "hostname": "kwin81.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win_Ser_2019_1809(17763)",
+            "hostname": "kwinser20191809.dl.local"
+        }
     ],
     "Clear Linux": [
-        "Koval_AltLinux_10.0",
-        "Koval_AltLinux_8.2",
-        "Koval_AltLinux_9.8",
-        "Koval_AltLinux_K_10.0",
-        "Koval_AltServer_10.0",
-        "Koval_AltServer_9.2",
-        "Koval_Astra_1.6(Smolensk)",
-        "Koval_Astra_1.6_CD(Smolensk)",
-        "Koval_Astra_1.7(Smolensk)",
-        "Koval_Astra_1.7_CD(Smolensk)",
-        "Koval_Astra_2.12(Orel)",
-        "Koval_CentOS_7.9",
-        "Koval_CentOS_8.4.2105",
-        "Koval_Debian_10.12",
-        "Koval_Debian_11.1",
-        "Koval_Debian_9.12",
-        "Koval_Fedora_35",
-        "Koval_OpenSUSE_15.3",
-        "Koval_RedOS_7.3.1",
-        "Koval_RedOS_7.3.2",
-        "Koval_Ubuntu_18.04",
-        "Koval_Ubuntu_20.04",
-        "Koval_Ubuntu_22.04"
+        {
+            "vm_name": "Koval_AltLinux_10.0",
+            "hostname": "kaltlinux100.dl.local"
+        },
+        {
+            "vm_name": "Koval_AltLinux_8.2",
+            "hostname": "kaltlinux82.dl.local"
+        },
+        {
+            "vm_name": "Koval_AltLinux_9.8",
+            "hostname": "kaltlinux98.dl.local"
+        },
+        {
+            "vm_name": "Koval_AltLinux_K_10.0",
+            "hostname": "kaltlinuxk100.dl.local"
+        },
+        {
+            "vm_name": "Koval_AltServer_10.0",
+            "hostname": "kaltserver100.dl.local"
+        },
+        {
+            "vm_name": "Koval_AltServer_9.2",
+            "hostname": "kaltserver92.dl.local"
+        },
+        {
+            "vm_name": "Koval_Astra_1.6(Smolensk)",
+            "hostname": "kastra16.dl.local"
+        },
+        {
+            "vm_name": "Koval_Astra_1.6_CD(Smolensk)",
+            "hostname": "kastra16cd.dl.local"
+        },
+        {
+            "vm_name": "Koval_Astra_1.7(Smolensk)",
+            "hostname": "kastra17.dl.local"
+        },
+        {
+            "vm_name": "Koval_Astra_1.7_CD(Smolensk)",
+            "hostname": "kastra17cd.dl.local"
+        },
+        {
+            "vm_name": "Koval_Astra_2.12(Orel)",
+            "hostname": "kastra212.dl.local"
+        },
+        {
+            "vm_name": "Koval_CentOS_7.9",
+            "hostname": "kcentos79.dl.local"
+        },
+        {
+            "vm_name": "Koval_CentOS_8.4.2105",
+            "hostname": "kcentos84.dl.local"
+        },
+        {
+            "vm_name": "Koval_Debian_10.12",
+            "hostname": "kdebian1012.dl.local"
+        },
+        {
+            "vm_name": "Koval_Debian_11.1",
+            "hostname": "kdebian111.dl.local"
+        },
+        {
+            "vm_name": "Koval_Debian_9.12",
+            "hostname": "kdebian912.dl.local"
+        },
+        {
+            "vm_name": "Koval_Fedora_35",
+            "hostname": "kfedora35.dl.local"
+        },
+        {
+            "vm_name": "Koval_OpenSUSE_15.3",
+            "hostname": "kopensuse153.dl.local"
+        },
+        {
+            "vm_name": "Koval_RedOS_7.3.1",
+            "hostname": "kredos731.dl.local"
+        },
+        {
+            "vm_name": "Koval_RedOS_7.3.2",
+            "hostname": "kredos732.dl.local"
+        },
+        {
+            "vm_name": "Koval_Ubuntu_18.04",
+            "hostname": "kubuntu1804.dl.local"
+        },
+        {
+            "vm_name": "Koval_Ubuntu_20.04",
+            "hostname": "kubuntu2004.dl.local"
+        },
+        {
+            "vm_name": "Koval_Ubuntu_22.04",
+            "hostname": "kubuntu2204.dl.local"
+        }
     ]
 }
