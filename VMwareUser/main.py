@@ -3,6 +3,7 @@ import getpass
 import json
 import os
 import time
+from pathlib import Path
 from enum import Enum
 from pyVim.connect import SmartConnectNoSSL, SmartConnect  # подключение
 from pyVmomi import vim  # список виртуальных
@@ -23,7 +24,7 @@ class SnapshotByNameTaskId(Enum):
 
 class VMwareUser:
     def __version__(self):
-        return "0.0.0.2"
+        return "0.0.0.3"
 
     def __init__(self):
         self.connection = None  # подклчючение
@@ -221,7 +222,7 @@ class VMwareUser:
         file_data = ""
         for machine_dict in self.available_apply_machines[self.apply_machine_list_name]:
             file_data += machine_dict["hostname"] + "\n"
-        file_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "remote_installer_list.txt")
+        file_path = os.path.join(str(Path.home()), "remote_installer_list.txt")
         file = open(file_path, "w", encoding="utf-8")
         file.write(file_data)
         file.close()
