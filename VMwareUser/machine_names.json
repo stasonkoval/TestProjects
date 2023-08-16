@@ -1,19 +1,23 @@
 {
     "Clear Windows": [
         {
-            "vm_name": "Koval_Win10_1909(18363)",
+            "vm_name": "Koval_Win10_1909",
             "hostname": "kwin101909.dl.local"
         },
         {
-            "vm_name": "Koval_Win10_20H2(19042)",
+            "vm_name": "Koval_Win10_20H2",
             "hostname": "kwin1020h2.dl.local"
         },
         {
-            "vm_name": "Koval_Win10_21H1(19043)",
+            "vm_name": "Koval_Win10_21H1",
             "hostname": "kwin1021h1.dl.local"
         },
         {
-            "vm_name": "Koval_Win11_22H2(22621)",
+            "vm_name": "Koval_Win10_22H2_x32",
+            "hostname": "kwin1022h2x32.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win11_22H2",
             "hostname": "kwin1122h2.dl.local"
         },
         {
@@ -25,7 +29,7 @@
             "hostname": "kwin81.dl.local"
         },
         {
-            "vm_name": "Koval_Win_Ser_2019_1809(17763)",
+            "vm_name": "Koval_Win_Ser_2019_1809",
             "hostname": "kwinser20191809.dl.local"
         }
     ],
