@@ -1,38 +1,4 @@
 {
-    "Clear Windows": [
-        {
-            "vm_name": "Koval_Win10_1909",
-            "hostname": "kwin101909.dl.local"
-        },
-        {
-            "vm_name": "Koval_Win10_20H2",
-            "hostname": "kwin1020h2.dl.local"
-        },
-        {
-            "vm_name": "Koval_Win10_21H1",
-            "hostname": "kwin1021h1.dl.local"
-        },
-        {
-            "vm_name": "Koval_Win10_22H2_x32",
-            "hostname": "kwin1022h2x32.dl.local"
-        },
-        {
-            "vm_name": "Koval_Win11_22H2",
-            "hostname": "kwin1122h2.dl.local"
-        },
-        {
-            "vm_name": "Koval_Win7(7601)",
-            "hostname": "kwin7.dl.local"
-        },
-        {
-            "vm_name": "Koval_Win81(9600)",
-            "hostname": "kwin81.dl.local"
-        },
-        {
-            "vm_name": "Koval_Win_Ser_2019_1809",
-            "hostname": "kwinser20191809.dl.local"
-        }
-    ],
     "Clear Linux": [
         {
             "vm_name": "Koval_AltLinux_10.0",
@@ -125,6 +91,90 @@
         {
             "vm_name": "Koval_Ubuntu_22.04",
             "hostname": "kubuntu2204.dl.local"
+        }
+    ],
+        "Clear Windows": [
+        {
+            "vm_name": "Koval_Win10_1909",
+            "hostname": "kwin101909.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win10_20H2",
+            "hostname": "kwin1020h2.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win10_21H1",
+            "hostname": "kwin1021h1.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win10_22H2_x32",
+            "hostname": "kwin1022h2x32.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win11_22H2",
+            "hostname": "kwin1122h2.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win7(7601)",
+            "hostname": "kwin7.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win81(9600)",
+            "hostname": "kwin81.dl.local"
+        },
+        {
+            "vm_name": "Koval_Win_Ser_2019_1809",
+            "hostname": "kwinser20191809.dl.local"
+        }
+    ],
+    "KSC_Windows": [
+        {
+            "vm_name": "Koval-11KSC (НЕ КЛОНИРОВАТЬ!!!)",
+            "hostname": "Koval-11KSC.dl.local"
+        },
+        {
+            "vm_name": "Koval-13KES-118",
+            "hostname": "Koval-13KES-118.dl.local"
+        },
+        {
+            "vm_name": "Koval-13KES-119",
+            "hostname": "Koval-13KES-119.dl.local"
+        },
+        {
+            "vm_name": "Koval-13KSC (НЕ КЛОНИРОВАТЬ!!!)",
+            "hostname": "Koval-13KSC.dl.local"
+        }
+    ],
+    "LDAP": [
+        {
+            "vm_name": "Koval_ALDPro_Astra_17.4",
+            "hostname": ""
+        },
+        {
+            "vm_name": "Koval_IPA_CentOS (server)",
+            "hostname": ""
+        },
+        {
+            "vm_name": "Koval_IPA_Deb (client)",
+            "hostname": ""
+        },
+        {
+            "vm_name": "Koval_redadm_RedOS_7.3.3",
+            "hostname": ""
+        },
+        {
+            "vm_name": "Koval_Samba_Deb",
+            "hostname": ""
+        },
+        {
+            "vm_name": "Koval_Samba_Ubuntu",
+            "hostname": ""
+        }
+    ],
+    "PostgreSQL": [
+        {
+            "vm_name": "Koval_UbuntuPsql",
+            "hostname": "ubuntupsql.dl.local"
         }
     ]
 }

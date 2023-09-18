@@ -80,45 +80,48 @@ class VMwareUser:
     def select_apply_machines(self):
         '''Задать список машин, с которыми будут вестить работы'''
         print("Выберите номер списка машин, с которым планируется проводить работы:")
-        for _ in range(5):
-            count = 0
+        while True:
+            cmd_count = 0
+            machines_count = 0
             for name, machine_dicts in self.available_apply_machines.items():
-                print(str(count), ") ", name, " - ", str(len(machine_dicts)), ' машин')
-                count += 1
+                print(str(cmd_count), ") ", name, " - ", str(len(machine_dicts)), ' машин')
+                machines_count += len(machine_dicts)
+                cmd_count += 1
+            print(str(cmd_count), ") ", "Все машины", " - ", machines_count, ' машин')
 
             try:
-                cmd = int(input(">>"))
-                if cmd < 0 or cmd >= count:
+                cmd_num = int(input(">>"))
+                if cmd_num < 0 or cmd_num > len(self.available_apply_machines):
                     raise Exception("Неверный номер команды")
                 break
             except Exception as e:
-                cmd = None
-                print(e)
+                cmd_num = None
                 print("Введите корректный номер списка:")
                 continue
-        if cmd == None:
-            raise Exception("Список машин для обработки не выбран")
 
-        for name, machine_dicts in self.available_apply_machines.items():
-            if cmd == 0:
-                # Проверка, что все машины в списке есть на VSphere
-                vsphere_machine_names = [vsphere_machine[0] for vsphere_machine in self.vsphere_machines]
-                machine_names_found = []
-                machine_names_not_found = []
-                for machine_dict in machine_dicts:
-                    machine_name = machine_dict["vm_name"]
-                    if machine_name in vsphere_machine_names:
-                        machine_names_found.append(machine_name)
-                    else:
-                        machine_names_not_found.append(machine_name)
-                if machine_names_not_found:
-                    raise Exception(
-                        f"В загруженном списке машин обнаружены имена, которых нет на сервере VSphere: \n {machine_names_not_found}")
-                self.apply_machine_names = machine_names_found
-                self.apply_machine_list_name = name
-                break
+        if cmd_num < len(self.available_apply_machines):
+            apply_machine_list_name = list(self.available_apply_machines.keys())[cmd_num]
+            apply_machine_names = [machine_dict["vm_name"] for machine_dict in self.available_apply_machines[apply_machine_list_name]]
+        else:
+            apply_machine_list_name = "Все машины"
+            apply_machine_names = []
+            for name, machine_dicts in self.available_apply_machines.items():
+                apply_machine_names += [machine_dict["vm_name"] for machine_dict in machine_dicts]
+
+        # Проверка, что все машины в списке есть на VSphere
+        vsphere_machine_names = [vsphere_machine[0] for vsphere_machine in self.vsphere_machines]
+        machine_names_found = []
+        machine_names_not_found = []
+        for machine_name in apply_machine_names:
+            if machine_name in vsphere_machine_names:
+                machine_names_found.append(machine_name)
             else:
-                cmd -= 1
+                machine_names_not_found.append(machine_name)
+        if machine_names_not_found:
+            raise Exception(
+                f"В загруженном списке машин обнаружены имена, которых нет на сервере VSphere: \n {machine_names_not_found}")
+        self.apply_machine_names = machine_names_found
+        self.apply_machine_list_name = apply_machine_list_name
         print('Для обработки выбрано ', colored(str(len(self.apply_machine_names)), 'magenta'), ' виртуальных машин')
 
     def machine_generator(self):
