@@ -1,4 +1,5 @@
 import asyncio
+import ctypes
 import getpass
 import json
 import os
@@ -9,6 +10,9 @@ from pyVim.connect import SmartConnectNoSSL, SmartConnect  # подключен�
 from pyVmomi import vim  # список виртуальных
 from termcolor import colored
 
+# Цветной вывод в консоли Windows
+kernel32 = ctypes.windll.kernel32
+kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
 class PowerTaskId(Enum):
     """Команда на вкл/выкл машины"""
